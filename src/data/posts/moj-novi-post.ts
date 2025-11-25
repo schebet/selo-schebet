@@ -8,8 +8,10 @@ export const mojNoviPost: BlogPost = {
   title: "Naslov mog teksta",
   author: "Ime i prezime novinara",
   date: "2025-11-25", // format YYYY-MM-DD
-  image: slikaGlavna,       // responsive slika
-  imageUrl: slikaGlavnaUrl, // fallback URL
+  image: slika777,       // responsive slika
+  imageUrl: slika777Url, // fallback URL
+  imageSrcSet: slika777Srcset,
+  ogImage: "/og-images/777.jpg",
   content: `
     Ovde ide glavni tekst objave.
     Može biti običan string ili Markdown formatiran tekst
