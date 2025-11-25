@@ -25,7 +25,7 @@ export const Hero = () => {
           src={heroImageUrl}
           srcSet={heroImageSrcSet}
           sizes={getHeroSizes()}
-          alt="Selo Šebet"
+          alt="selo Šebet"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
@@ -35,7 +35,7 @@ export const Hero = () => {
       <div className="relative h-full flex items-center justify-center text-center px-4">
         <div className="max-w-4xl animate-fade-in-up">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 text-gradient-primary">
-            Selo Šebet
+            selo Šebet
           </h1>
           <p className="text-xl md:text-2xl text-foreground mb-8 max-w-2xl mx-auto">
             Dokumentarni sajt o selu — istorija, kultura, ljudi i priče našeg sela

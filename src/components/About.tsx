@@ -22,7 +22,7 @@ export const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-back-to-top">
-              O selu Šebet
+              O selu selo Šebet
             </h2>
             <p className="text-xl text-muted-foreground">
               Naša priča, naša istorija, naš dom
@@ -49,16 +49,16 @@ export const About = () => {
           <Card className="bg-gradient-card border-border/50 card-hover">
             <CardContent className="p-8 space-y-6">
               <p className="text-lg leading-relaxed">
-                Selo Šebet je jedno od najstarijih naselja u ovom kraju, sa bogatom
+                selo Šebet je jedno od najstarijih naselja u ovom kraju, sa bogatom
                 istorijom koja seže u daleku prošlost. Osnovano 1450. godine, naše
                 selo je kroz vekove bilo dom mnogim generacijama koje su čuvale
                 tradiciju i kulturu ovog kraja.
               </p>
               <p className="text-lg leading-relaxed">
-                Smešteno u prelepoj prirodi, okruženo zelenim brdima i čistim potocima, Šebet pruža mir i spokojstvo daleko od gradske vreve. Naši stanovnici su poznati po gostoprimstvu, vrednoći i ljubavi prema svojoj zemlji.
+                Smešteno u prelepoj prirodi, okruženo zelenim brdima i čistim potocima, selo Šebet pruža mir i spokojstvo daleko od gradske vreve. Naši stanovnici su poznati po gostoprimstvu, vrednoći i ljubavi prema svojoj zemlji.
               </p>
               <p className="text-lg leading-relaxed">
-                Danas, Šebet je zajednica koja spaja tradiciju i modernost,
+                Danas, selo Šebet je zajednica koja spaja tradiciju i modernost,
                 čuvajući svoje korene dok gleda prema budućnosti. Naš cilj je
                 dokumentovati i podeliti priče koje čine našu zajednicu posebnom.
               </p>
