@@ -1,0 +1,20 @@
+// src/data/posts/moj-novi-post.ts
+import slikaGlavna from "@/assets/photos/mojaslika.JPG?w=640;768;1024;1280;1920&format=webp&quality=85&as=srcset";
+import slikaGlavnaUrl from "@/assets/photos/mojaslika.JPG?w=1024&format=webp&quality=85";
+import type { BlogPost } from "../blogPosts";
+
+export const mojNoviPost: BlogPost = {
+  id: 11, // obavezno jedinstven broj za svaki post
+  title: "Naslov mog teksta",
+  author: "Ime i prezime novinara",
+  date: "2025-11-25", // format YYYY-MM-DD
+  image: slikaGlavna,       // responsive slika
+  imageUrl: slikaGlavnaUrl, // fallback URL
+  content: `
+    Ovde ide glavni tekst objave.
+    Može biti običan string ili Markdown formatiran tekst
+    (naslovi, liste, linkovi, citati).
+  `,
+  tags: ["politika", "kultura", "intervju"], // opcionalno: ključne reči
+};
+
