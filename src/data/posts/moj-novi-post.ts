@@ -1,6 +1,6 @@
 // src/data/posts/moj-novi-post.ts
-import slikaGlavna from "@/assets/photos/mojaslika.JPG?w=640;768;1024;1280;1920&format=webp&quality=85&as=srcset";
-import slikaGlavnaUrl from "@/assets/photos/mojaslika.JPG?w=1024&format=webp&quality=85";
+import slika777Srcset from "@/assets/photos/777.JPG?w=640;768;1024;1280;1920&format=webp&quality=85&as=srcset";
+import slika777Url from "@/assets/photos/777.JPG?w=1024&format=webp&quality=85";
 import type { BlogPost } from "../blogPosts";
 
 export const mojNoviPost: BlogPost = {
