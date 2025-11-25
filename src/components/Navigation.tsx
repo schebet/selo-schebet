@@ -33,7 +33,7 @@ export const Navigation = ({ selectedCategory, onCategoryChange }: {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <button onClick={() => handleNavClick('home')} className="text-2xl font-bold text-gradient-primary cursor-pointer">
-            Šebet
+            selo Šebet
           </button>
 
           {/* Desktop Navigation */}

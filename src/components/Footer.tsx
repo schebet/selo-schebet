@@ -22,7 +22,7 @@ export const Footer = () => {
           {/* About */}
           <div>
             <h3 className="text-2xl font-bold text-gradient-primary mb-4">
-              Selo Šebet
+              selo Šebet
             </h3>
             <p className="text-muted-foreground mb-4">
               Dokumentarni sajt o našem selu — čuvamo priče i tradiciju za buduće
@@ -114,7 +114,7 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-muted-foreground">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>Selo Šebet, Opština XYZ</span>
+                <span>selo Šebet, Opština XYZ</span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="w-5 h-5 flex-shrink-0" />
@@ -125,7 +125,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-          <p>© {currentYear} Selo Šebet. Sva prava zadržana.</p>
+          <p>© {currentYear} selo Šebet. Sva prava zadržana.</p>
         </div>
       </div>
     </footer>
