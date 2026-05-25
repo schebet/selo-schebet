@@ -50,6 +50,9 @@ export const Navigation = ({ selectedCategory, onCategoryChange }: {
             <button onClick={() => handleNavClick('about')} className="text-foreground hover:text-primary transition-colors cursor-pointer">
               O selu
             </button>
+            <Link to="/temp-mail" className="text-foreground hover:text-primary transition-colors">
+              Temp Mail
+            </Link>
             
             <div className="flex items-center gap-4 ml-4 border-l border-border pl-4">
               <a href="https://www.facebook.com/seloSebet" target="_blank" rel="noopener noreferrer" 
@@ -118,6 +121,9 @@ export const Navigation = ({ selectedCategory, onCategoryChange }: {
             <button onClick={() => handleNavClick('about')} className="block w-full text-left text-foreground hover:text-primary transition-colors cursor-pointer">
               O selu
             </button>
+            <Link to="/temp-mail" onClick={() => setIsOpen(false)} className="block w-full text-left text-foreground hover:text-primary transition-colors">
+              Temp Mail
+            </Link>
             <div className="flex items-center gap-4 pt-4 border-t border-border">
               <a href="https://www.facebook.com/seloSebet" target="_blank" rel="noopener noreferrer"
                  className="hover:scale-110 transition-transform"
