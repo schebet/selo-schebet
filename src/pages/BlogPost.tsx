@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/Navigation";
@@ -5,16 +6,18 @@ import { Footer } from "@/components/Footer";
 import { BackToTop } from "@/components/BackToTop";
 import { SocialShare } from "@/components/SocialShare";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { FlipBookDialog } from "@/components/FlipBookDialog";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Calendar, User, ArrowLeft, Tag, ArrowRight } from "lucide-react";
+import { Calendar, User, ArrowLeft, Tag, ArrowRight, BookOpen } from "lucide-react";
 import { blogPosts as blogPostsData, getCategoryColor } from "@/data/blogPosts";
 
 const BlogPost = () => {
   const { id } = useParams();
+  const [flipOpen, setFlipOpen] = useState(false);
   const post = blogPostsData.find((p) => p.id === Number(id));
 
   const getRelatedPosts = () => {
@@ -109,13 +112,17 @@ const BlogPost = () => {
               {post.excerpt}
             </p>
 
-            {/* Social Share */}
-            <div className="mb-8 pb-8 border-b border-border">
-              <SocialShare 
+            {/* Social Share + Flipbook */}
+            <div className="mb-8 pb-8 border-b border-border flex flex-wrap items-center justify-between gap-4">
+              <SocialShare
                 url={`/blog/${post.id}`}
                 title={post.title}
                 description={post.excerpt}
               />
+              <Button onClick={() => setFlipOpen(true)} variant="default" size="sm">
+                <BookOpen className="w-4 h-4 mr-2" />
+                Otvori kao flipbook
+              </Button>
             </div>
 
             <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg mb-8">
@@ -261,6 +268,7 @@ const BlogPost = () => {
           </div>
         </article>
       </main>
+      <FlipBookDialog open={flipOpen} onOpenChange={setFlipOpen} post={post} />
       <BackToTop />
       <Footer />
     </div>
